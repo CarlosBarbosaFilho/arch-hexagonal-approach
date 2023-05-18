@@ -62,7 +62,8 @@ Ainda afirmando que, o sentido de uma chamada ao centro da aplicação é único
 
 Exemplo de uma requisição passando pelos pontos apresentados.
 
-![Captura de Tela 2023-05-17 às 15.54.26.png](..%2F..%2FLibrary%2FGroup%20Containers%2Fgroup.com.apple.notes%2FAccounts%2FC38C8F29-BD0D-48CC-B3AB-9C58D08A2F3F%2FMedia%2F299F80A3-39A0-4706-BCFB-0AC9CC991090%2FCaptura%20de%20Tela%202023-05-17%20%C3%A0s%2015.54.26.png)
+<img width="764" alt="diagram" src="https://github.com/CarlosBarbosaFilho/arch-hexagonal-approach/assets/2454085/b8ff045c-306d-49b5-8933-90a4e6dcd948">
+
 
 Analisando a imagem acima, podemos perceber a definição em execução. Identificamos os pontos de entrada de dados, conversão de tipos para obedecer o conceito, execução/processamento do caso de uso por meio dos objetos de domínio, conversão para entidade persistente e chamada externa ao banco de dados por meio do adaptador secundário para iniciar o processo transacional na base de dados, nesse caso.
 
