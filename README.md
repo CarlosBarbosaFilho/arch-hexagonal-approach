@@ -4,7 +4,7 @@ Boa noite, meu povo de DEUS.
 Mais uma pra conta, hoje falaremos sobre arquitetura hexagonal, ou ports and adapters que é o sub titulo desse design arquitetural.
 
 E lá vem história …
-Esse conceito foi criado por Alistair Cockburn , sua proposta fundamental é poder contornar o acoplamento e fluxo de dados entre as camadas que compõe a estrutura interna no contexto de um software. Pois define a organização do código em forma de design.
+Esse conceito foi criado por Alistair Cockburn , sua proposta fundamental é poder contornar o acoplamento e fluxo de dados entre as camadas que compõe a estrutura interna no contexto de um software. Pois define a organização do código em forma de design.
 
 Objetivos práticos …
 
@@ -14,18 +14,18 @@ Mas também entende-se que, toda e qualquer solução deve e irá surgir para o 
 
 Quando levado para o lado tecnológico, deve-se entender que o núcleo da solução deve ser agnóstico as processos de entradas e saídas das informações, tecnologias envolvidas e frameworks, base de armazenamento, etc.
 
-Em seu site, o criador desse conceito de arquitetura hexagonal fala assim:
+Em seu site, o criador desse conceito de arquitetura hexagonal fala assim:
 
-“Crie seu aplicativo para funcionar sem uma interface do usuário ou um banco de dados para que você possa executar testes de regressão automatizados no aplicativo, trabalhar quando o banco de dados ficar indisponível e vincular aplicativos sem qualquer envolvimento do usuário”.
+“Crie seu aplicativo para funcionar sem uma interface do usuário ou um banco de dados para que você possa executar testes de regressão automatizados no aplicativo, trabalhar quando o banco de dados ficar indisponível e vincular aplicativos sem qualquer envolvimento do usuário”.
 
 Em outras palavras ele quer dizer que, não importa como essas informações serão processadas pela aplicação, ou até mesmo armazenadas, o que importa é que, a solução do domínio do problema deve permanecer indiferente ao mundo externo.
 
 Componentes e agentes integradores que definem a arquitetura hexagonal:
 
-1 - Adaptadores - Adapters
-2 - Portas - Ports
-3 - Domínio - Domain
-4 - Casos de Uso - Use Case
+### 1 - Adaptadores - Adapters
+### 2 - Portas - Ports
+### 3 - Domínio - Domain
+### 4 - Casos de Uso - Use Case
 
 ### Uma imagem vale mais do que mil palavras …
 
@@ -46,15 +46,15 @@ Créditos da imagem - <https://reflectoring.io/spring-hexagonal/>
 
 Na imagem do hexágono, estão presentes os pontos discutidos acima, porém dois deles que ainda não apresentados, são eles API e SPI. Interface de Programação de Software (API) e Interface de Programação de Serviço (SPI) são dois tipos diferentes de interfaces usadas para interagir com aplicativos de software.
 
-A API é uma interface que permite que os aplicativos se comuniquem entre si, enquanto o SPI é uma interface que permite que os aplicativos interajam com um serviço. Tanto APIs quanto SPIs são usados ​​para facilitar a comunicação entre aplicativos, mas possuem algumas diferenças importantes.
+A API é uma interface que permite que os aplicativos se comuniquem entre si, enquanto o SPI é uma interface que permite que os aplicativos interajam com um serviço. Tanto APIs quanto SPIs são usados para facilitar a comunicação entre aplicativos, mas possuem algumas diferenças importantes.
 
 Diferenças entre API e SPI
 
 De forma simples, a diferença entre API e SPI é que uma API prover interfaces para iteração entre aplicações e mudança de dados entre elas, já uma SPI prover um conjunto de regras e protocolos que permite aplicações realizarem comunicação com outros serviços e interagir com estes.
 
-Regras de Dependência
+Regras de Dependência : Acess <https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html>
 
-Um dos nomes mais importantes quando falamos de modelos arquiteturais e criador da clean architecture (escrevi um pequeno artigo sobre nesse link) ou arquitetura limpa, Uncle Bob diz em seu artigo:
+Um dos nomes mais importantes quando falamos de modelos arquiteturais e criador da clean architecture (escrevi um pequeno artigo sobre nesse <https://www.linkedin.com/pulse/clean-architeture-carlos-barbosa-gomes-filho/>) ou arquitetura limpa, Uncle Bob diz em seu artigo:
 
 “O nome de um elemento declarado em uma camada externa não deve ser mencionado pelo código de uma camada interna. Isso inclui funções, classes, variáveis e qualquer outro elemento de código.”
 
