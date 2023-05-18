@@ -15,6 +15,6 @@ public interface ContactApi {
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     ResponseEntity<ContactResponse> create(@RequestBody ContactRequest contactRequest);
-    
+
 
 }
