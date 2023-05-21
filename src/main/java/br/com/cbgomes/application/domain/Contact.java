@@ -19,22 +19,6 @@ public class Contact {
     private String email;
     private String phone;
 
-    public ContactEntity toContactEntity(Contact domain){
-        return ContactEntity.builder()
-                .name(domain.name)
-                .email(domain.email)
-                .phone(domain.phone)
-                .build();
-    }
-
-    public ContactResponse toContactResponse(Contact domain) {
-        return ContactResponse.builder()
-                .id(domain.id)
-                .name(domain.name)
-                .email(domain.email)
-                .phone(domain.phone)
-                .build();
-    }
 
     public Contact save(IContactRepositoryPort iContactRepositoryPort) {
         validContactDomain(this);
