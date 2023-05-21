@@ -8,17 +8,17 @@ Esse conceito foi criado por Alistair Cockburn , sua proposta fundamental é pod
 
 Objetivos práticos …
 
-Imaginemos um problema à ser resolvido, e esse problema aponta criação de um sistema de informação, ou podemos também chamar de domínio do problema, como identifica do DDD (Domain Driven Design, se quiserem algum papo sobre esse assunto, comenta aqui no post), nesse caso podem surgir várias visão, contextos e fronteiras que esse problema apresenta.
+Imaginemos um problema à ser resolvido, e esse problema aponta a criação de um sistema de informação, ou podemos também chamar de domínio do problema, como identifica conceitua o DDD (Domain Driven Design, se quiserem algum papo sobre esse assunto, comenta aqui no post), nesse caso podem surgir várias visão, contextos e fronteiras que esse problema apresenta.
 
-Mas também entende-se que, toda e qualquer solução deve e irá surgir para o fim necessário que é resolver cada problema apresentado dentro desse domínio. E tendo isso como verdade, podemos dizer que, não importa quais as ferramentas serão usadas, o problema não vai mudar de complexidade, de entendimento e muito menos a forma de solucioná-lo.
+Mas também entende-se que, toda e qualquer solução deve e irá surgir para o fim necessário que é resolver cada problema apresentado dentro desse domínio. E tendo isso como verdade, podemos dizer que, não importa quais as ferramentas serão usadas, o problema não vai mudar de complexidade e tambem de entendimento.
 
-Quando levado para o lado tecnológico, deve-se entender que o núcleo da solução deve ser agnóstico as processos de entradas e saídas das informações, tecnologias envolvidas e frameworks, base de armazenamento, etc.
+Quando levado para o lado técnico, deve-se entender que o core da solução deve ser agnóstico as processos de entradas e saídas das que orquestran as informações, tecnologias envolvidas, frameworks, base de armazenamento, etc.
 
-Em seu site, o criador desse conceito de arquitetura hexagonal fala assim:
+Em seu site, o criador diz que o conceito de arquitetura hexagonal reza:
 
 “Crie seu aplicativo para funcionar sem uma interface do usuário ou um banco de dados para que você possa executar testes de regressão automatizados no aplicativo, trabalhar quando o banco de dados ficar indisponível e vincular aplicativos sem qualquer envolvimento do usuário”.
 
-Em outras palavras ele quer dizer que, não importa como essas informações serão processadas pela aplicação, ou até mesmo armazenadas, o que importa é que, a solução do domínio do problema deve permanecer indiferente ao mundo externo.
+Em outras palavras, não importa como essas informações serão processadas pela aplicação, ou até mesmo armazenadas, o que importa é que, a solução do domínio do problema deve permanecer indiferente ao mundo externo.
 
 Componentes e agentes integradores que definem a arquitetura hexagonal:
 
